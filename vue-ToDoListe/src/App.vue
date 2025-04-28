@@ -33,12 +33,12 @@ function deleteFromList(Index) {
 </script>text
 
 <template>
-  <input type="checkbox" v-model="inputOpen">
-  {{ inputOpen }}
-  <h1>ToDo - Liste</h1>
+  <!-- <input type="checkbox" v-model="inputOpen">
+  {{ inputOpen }} -->
+  <h1 class="headline">ToDo - Liste</h1>
 <form v-if="inputOpen">
 
-  <p>Nr. #</p>
+  <p class="">Nr. #</p>
   <input type="number" placeholder="Nr." v-model="toDoItem.nr">
   
   <p>Aufgaben</p>
@@ -94,16 +94,7 @@ function deleteFromList(Index) {
     <div>{{ toDo.done }}</div>
     <button @click="editEntry(Index)">Änderungen</button>
     <button @click="deleteFromList(Index)">Löschen</button>
-  
   </section>
-
-  
-  
-
-
-
-
-  
 </template>
 
 <style>
@@ -112,6 +103,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: larger;
   color: darkblue;
+  background-color: bisque;
 }
 
 .listHeader {
@@ -125,14 +117,33 @@ body {
 .oneListItem{
     padding:5px;
     margin:10px auto;
-    box-shadow: 0 0 3px grey;
+    box-shadow: 2px 2px 4px grey;
     border-radius: 5px;
     width: 90%;
-    transition: all 0.5s;
+    transition: all 2s;
     display: flex;
     justify-content: space-between;
+    background-color: rgb(168, 42, 42)
+    }
+
+  .headline {
+    color: rgb(168, 42, 42);
+    text-align: center;
+    text-shadow: 2px 2px 4px navy;
+    
   }
 
+  button {
+    border-radius: 5px;
+    transition: 1s;
+    color: navy;
+    
+    }
 
+  button:hover {
+    transition: all 0.5s;
+    color: darkgreen;
+    cursor: pointer;
+  }
 
 </style>
