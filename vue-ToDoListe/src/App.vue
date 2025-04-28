@@ -123,11 +123,11 @@ body {
     transition: all 2s;
     display: flex;
     justify-content: space-between;
-    background-color: rgb(168, 42, 42)
+    background-color: rgb(226, 138, 138)
     }
 
   .headline {
-    color: rgb(168, 42, 42);
+    color: rgb(228, 129, 129);
     text-align: center;
     text-shadow: 2px 2px 4px navy;
     
