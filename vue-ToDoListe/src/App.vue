@@ -102,7 +102,7 @@ function deleteFromList(Index) {
 body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: larger;
-  color: darkblue;
+  color: rgb(28, 187, 14);
   background-color: bisque;
 }
 
@@ -123,13 +123,13 @@ body {
     transition: all 2s;
     display: flex;
     justify-content: space-between;
-    background-color: rgb(226, 138, 138)
+    background-color: rgb(76, 76, 230);
     }
 
   .headline {
-    color: rgb(228, 129, 129);
+    color: rgb(76, 76, 230);
     text-align: center;
-    text-shadow: 2px 2px 4px navy;
+    text-shadow: 2px 2px 4px rgb(25, 221, 58);
     
   }
 
